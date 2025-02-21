@@ -8,7 +8,7 @@ $('#gallerySlider').slick({
   speed: 2000,
   autoplay: true,
   prevArrow:
-    '<button class="gallerySlider__btn gallerySlider__btnprev"><img src="../images/ico/chevron-left.svg" loading="lazy" alt="" /></button>',
+    '<button class="gallerySlider__btn gallerySlider__btnprev"><img src="./images/ico/chevron-left.svg" loading="lazy" alt="" /></button>',
   nextArrow:
     '<button class="gallerySlider__btn gallerySlider__btnnext"><img src="./images/ico/chevron-right.svg" loading="lazy" alt="" /></button>',
   responsive: [
