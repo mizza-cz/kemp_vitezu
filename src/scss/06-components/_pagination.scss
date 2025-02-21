@@ -1,0 +1,44 @@
+.pagination {
+  margin-top: 48px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 40px;
+  }
+  .page-item.active .page-link {
+    background-color: var(--color-text-accent-pressed);
+    border-color: var(--color-accent-pressed);
+    color: var(--color-light);
+    border-radius: 8px !important;
+  }
+
+  .page-link {
+    color: var(--color-red);
+    transition: all 0.3s;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+a.page-link:hover {
+  text-decoration-color: inherit;
+}
+.page-item.disabled .page-link {
+  color: var(--color-text-muted);
+  svg path {
+    fill: var(--color-text-muted);
+  }
+}

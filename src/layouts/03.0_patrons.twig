@@ -1,0 +1,46 @@
+{% extends "@components/base/base.twig" %} {% set title = "03.0_patrons" %} {% block main %}
+
+<div class="base">
+  {% include "@components/header/header.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    <section class="patronsPage">
+      <div class="container">
+        <h1 class="h1 text-center mb-lg-32 mb-4">Patroni</h1>
+        <div class="row g-lg-4 g-3">
+          <div class="col-lg-4 col-sm-6">
+            {% include "@components/patronItem/patronItem.twig" %}
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            {% include "@components/patronItem/patronItem.twig" %}
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            {% include "@components/patronItem/patronItem.twig" %}
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            {% include "@components/patronItem/patronItem.twig" %}
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            {% include "@components/patronItem/patronItem.twig" %}
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            {% include "@components/patronItem/patronItem.twig" %}
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            {% include "@components/patronItem/patronItem.twig" %}
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            {% include "@components/patronItem/patronItem.twig" %}
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main__decore">
+      <img src="images/content/main-bg.png" loading="lazy" alt="main bg" />
+    </div>
+    
+  </main>
+  {% include "@components/gallery/gallery.twig" %} {% include "@components/posts/posts.twig" %} {%
+  include "@components/partners/partners.twig" %} {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}

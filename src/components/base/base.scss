@@ -1,0 +1,15 @@
+.base {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    background: radial-gradient(50% 50% at 50% 50%, #e0f1fe 0%, #ffffff 100%);
+    z-index: -1;
+
+    width: 1920px;
+    height: 2292px;
+    top: -1144px;
+    opacity: 0.7;
+  }
+}

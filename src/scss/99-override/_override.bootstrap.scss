@@ -1,0 +1,53 @@
+/*! purgecss start ignore */
+.container {
+  padding: 0 16px !important;
+  margin: 0 auto;
+  max-width: 1562px !important;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-lg-32 {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 32px !important;
+  }
+}
+.mt-lg-64 {
+  margin-top: 64px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 40px;
+  }
+}
+.mb-lg-48 {
+  margin-bottom: 48px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 32px;
+  }
+}
+.mt-lg-48 {
+  margin-top: 48px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 32px;
+  }
+}
+.my-lg-48 {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+.text-secondary {
+  color: var(--color-text-secondary) !important;
+}
+.mb-12 {
+  margin-bottom: 12px !important;
+}
+.mt-12 {
+  margin-top: 12px !important;
+}
+/*! purgecss end ignore */

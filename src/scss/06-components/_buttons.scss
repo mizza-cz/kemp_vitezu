@@ -1,0 +1,39 @@
+/*! purgecss start ignore */
+.btn {
+  padding: 10px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+
+  span {
+    padding: 0 8px;
+  }
+  .ico-plus {
+    width: 20px;
+    height: 20px;
+  }
+  &:hover {
+    background-color: var(--color-secondary-disabled);
+  }
+}
+ 
+.btn.btn--accent {
+  background: var(--color-text-accent) !important;
+  color: var(--color-light);
+  border: 1px solid var(--color-text-accent);
+  svg path {
+    transition: all 0.3s;
+  }
+  &:hover {
+    color: var(--color-text-accent) !important;
+    background: var(--color-light) !important;
+    svg path {
+      fill: var(--color-text-accent);
+    }
+  }
+}
+/*! purgecss end ignore */

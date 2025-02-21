@@ -1,0 +1,172 @@
+{% extends "@components/base/base.twig" %} {% set title = "05.0_gallery" %} {% block main %}
+
+<div class="base">
+  {% include "@components/header/header.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    <section class="galleryPage">
+      <div class="container">
+        <h1 class="h1 text-center mb-lg-32 mb-4">Galerie</h1>
+
+        <div class="row g-lg-4 g-3">
+          <div class="col-xl-3 col-md-4 col-6">
+            <a
+              data-source="/kemp_vitezu/build/ajax-gallery.json"
+              data-gallery-id="1"
+              href="#"
+              class="patronItem"
+            >
+              <div class="patronItem__img">
+                <img src="images/content/patron.png" loading="lazy" alt="patron" />
+              </div>
+              <div class="tag tag-accent mb-2">16 fotek</div>
+              <h2 class="h5">Náměšť nad Oslavou 2025</h2>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4 col-6">
+            <a
+              data-source="/kemp_vitezu/build/ajax-gallery.json"
+              data-gallery-id="1"
+              href="#"
+              class="patronItem"
+            >
+              <div class="patronItem__img">
+                <img src="images/content/patron.png" loading="lazy" alt="patron" />
+              </div>
+              <div class="tag tag-accent mb-2">16 fotek</div>
+              <h2 class="h5">Náměšť nad Oslavou 2025</h2>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4 col-6">
+            <a
+              data-source="/kemp_vitezu/build/ajax-gallery.json"
+              data-gallery-id="1"
+              href="#"
+              class="patronItem"
+            >
+              <div class="patronItem__img">
+                <img src="images/content/patron.png" loading="lazy" alt="patron" />
+              </div>
+              <div class="tag tag-accent mb-2">16 fotek</div>
+              <h2 class="h5">Náměšť nad Oslavou 2025</h2>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4 col-6">
+            <a
+              data-source="/kemp_vitezu/build/ajax-gallery.json"
+              data-gallery-id="1"
+              href="#"
+              class="patronItem"
+            >
+              <div class="patronItem__img">
+                <img src="images/content/patron.png" loading="lazy" alt="patron" />
+              </div>
+              <div class="tag tag-accent mb-2">16 fotek</div>
+              <h2 class="h5">Náměšť nad Oslavou 2025</h2>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4 col-6">
+            <a
+              data-source="/kemp_vitezu/build/ajax-gallery.json"
+              data-gallery-id="1"
+              href="#"
+              class="patronItem"
+            >
+              <div class="patronItem__img">
+                <img src="images/content/patron.png" loading="lazy" alt="patron" />
+              </div>
+              <div class="tag tag-accent mb-2">16 fotek</div>
+              <h2 class="h5">Náměšť nad Oslavou 2025</h2>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4 col-6">
+            <a
+              data-source="/kemp_vitezu/build/ajax-gallery.json"
+              data-gallery-id="1"
+              href="#"
+              class="patronItem"
+            >
+              <div class="patronItem__img">
+                <img src="images/content/patron.png" loading="lazy" alt="patron" />
+              </div>
+              <div class="tag tag-accent mb-2">16 fotek</div>
+              <h2 class="h5">Náměšť nad Oslavou 2025</h2>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4 col-6">
+            <a
+              data-source="/kemp_vitezu/build/ajax-gallery.json"
+              data-gallery-id="1"
+              href="#"
+              class="patronItem"
+            >
+              <div class="patronItem__img">
+                <img src="images/content/patron.png" loading="lazy" alt="patron" />
+              </div>
+              <div class="tag tag-accent mb-2">16 fotek</div>
+              <h2 class="h5">Náměšť nad Oslavou 2025</h2>
+            </a>
+          </div>
+          <div class="col-xl-3 col-md-4 col-6">
+            <a
+              data-source="/kemp_vitezu/build/ajax-gallery.json"
+              data-gallery-id="1"
+              href="#"
+              class="patronItem"
+            >
+              <div class="patronItem__img">
+                <img src="images/content/patron.png" loading="lazy" alt="patron" />
+              </div>
+              <div class="tag tag-accent mb-2">16 fotek</div>
+              <h2 class="h5">Náměšť nad Oslavou 2025</h2>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Další stránky">
+          <ul
+            class="pagination d-flex flex-wrap pagination-flat pagination-success justify-content-center"
+          >
+            <li class="page-item disabled">
+              <a class="page-link" href="#" data-abc="true">
+                {% include "@images/chevron-left.svg" %} Předchozí</a
+              >
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#" data-abc="true">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">6</a>
+            </li>
+            <li class="page-item">
+              <div class="page-link" data-abc="true">...</div>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">
+                Další {% include "@images/chevron-right.svg" %}
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <div class="main__decore">
+      <img src="images/content/main-bg.png" loading="lazy" alt="main bg" />
+    </div>
+  </main>
+  {% include "@components/posts/posts.twig" %} {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}

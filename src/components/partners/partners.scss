@@ -1,0 +1,29 @@
+.partners {
+  padding: 80px 0;
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0;
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .slick-slide img {
+    max-height: 100px;
+
+    max-width: 100%;
+    margin: 0 auto;
+    @include media-breakpoint-down(lg) {
+      max-height: 80px;
+    }
+  }
+  .slick-arrow {
+    display: none;
+  }
+  &__item {
+    img {
+      max-height: 100px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
