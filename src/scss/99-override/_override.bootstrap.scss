@@ -21,6 +21,12 @@
     margin-top: 40px;
   }
 }
+.mb-lg-64 {
+  margin-bottom: 64px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
+}
 .mb-lg-48 {
   margin-bottom: 48px;
   @include media-breakpoint-down(lg) {

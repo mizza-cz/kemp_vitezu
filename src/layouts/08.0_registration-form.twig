@@ -1,0 +1,17 @@
+{% extends "@components/base/base.twig" %} {% set title = "08.0_registration-form" %} {% block main
+%}
+
+<div class="base">
+  {% include "@components/header/header.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    {% include "@components/registrationForm/registrationForm.twig" %}
+
+    <div class="main__decore">
+      <img src="images/content/main-bg.png" loading="lazy" alt="main bg" />
+    </div>
+  </main>
+  {% include "@components/gallery/gallery.twig" %} {% include "@components/posts/posts.twig" %} {%
+  include "@components/partners/partners.twig" %} {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}

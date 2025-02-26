@@ -1,0 +1,242 @@
+<section class="registrationForm">
+  <div class="container">
+    <h1 class="h1 text-center mb-lg-64">Registrace</h1>
+    <div class="registrationForm__wrapp">
+      <h2 class="h4 mb-4">Budu se registrovat poprvé</h2>
+      <form>
+        <div class="row mb-4 g-4">
+          <div class="col-md-6">
+            <label for="jmeno" class="registrationForm-label">Jméno</label>
+            <input type="text" class="registrationForm-input" id="jmeno" placeholder="Tomáš" />
+          </div>
+          <div class="col-md-6">
+            <label for="prijmeni" class="registrationForm-label">Příjmení</label>
+            <input
+              type="text"
+              class="registrationForm-input"
+              id="prijmeni"
+              placeholder="Příjmení"
+            />
+          </div>
+        </div>
+        <div class="row mb-4 g-4">
+          <div class="col-md-6">
+            <label for="datum_narozeni" class="registrationForm-label">Datum narození</label>
+            <input type="date" class="registrationForm-input" id="datum_narozeni" />
+          </div>
+          <div class="col-md-6">
+            <label for="rodne_cislo" class="registrationForm-label">Rodné číslo účastníka</label>
+            <input
+              type="text"
+              class="registrationForm-input"
+              id="rodne_cislo"
+              placeholder="XXXXXX/XXXX"
+            />
+          </div>
+        </div>
+        <div class="row mb-4 g-4">
+          <div class="col-md-6">
+            <label for="pohlavi" class="registrationForm-label">Pohlaví</label>
+            <select class="form-select" id="pohlavi">
+              <option selected>Vyberte</option>
+              <option value="muz">Muž</option>
+              <option value="zena">Žena</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="narodnost" class="registrationForm-label">Národnost</label>
+            <select class="form-select" id="narodnost">
+              <option selected>Česká</option>
+              <option value="slovenska">Slovenská</option>
+              <option value="jina">Jiná</option>
+            </select>
+          </div>
+        </div>
+        <hr />
+        <!-- Zákonný zástupce -->
+        <h3 class="h5 my-4">Zákonný zástupce</h3>
+        <div class="mb-4">
+          <label for="zastupce_jmeno" class="registrationForm-label">Jméno a příjmení</label>
+          <input
+            type="text"
+            class="registrationForm-input"
+            id="zastupce_jmeno"
+            placeholder="Jméno a příjmení"
+          />
+        </div>
+        <div class="row mb-4 g-4">
+          <div class="col-md-6">
+            <label for="telefon" class="registrationForm-label">Telefon</label>
+            <input
+              type="tel"
+              class="registrationForm-input"
+              id="telefon"
+              placeholder="000.000.000"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="registrationForm-label">E-mail</label>
+            <input
+              type="email"
+              class="registrationForm-input"
+              id="email"
+              placeholder="example@email.com"
+            />
+          </div>
+        </div>
+        <hr />
+
+        <div class="mb-4">
+          <label for="skola" class="registrationForm-label">ZŠ kterou dítě navštěvuje</label>
+          <input type="text" class="registrationForm-input" id="skola" placeholder="Název školy" />
+        </div>
+        <div class="mb-4">
+          <label for="alergie" class="registrationForm-label">Alergie, speciální požadavky</label>
+          <input
+            type="text"
+            class="registrationForm-input"
+            id="alergie"
+            placeholder=" Popište přesně    "
+          />
+        </div>
+        <div class="mb-4">
+          <label for="handicap" class="registrationForm-label">Tělesný handicap</label>
+          <input
+            type="text"
+            class="registrationForm-input"
+            id="handicap"
+            placeholder="Vyplňte pokud existuje"
+          />
+        </div>
+        <div class="row mb-4 g-4">
+          <div class="col-md-6">
+            <label for="velikost" class="registrationForm-label">Velikost dítěte</label>
+            <select class="form-select" id="velikost">
+              <option selected>Vyberte</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+            </select>
+            <div class="mt-1 text-secondary p3">zobrazit tabulky <a href="#">velikostí</a></div>
+          </div>
+          <div class="col-md-6">
+            <label for="prezdivka" class="registrationForm-label">Přezdívka na tričku</label>
+            <input
+              type="text"
+              class="registrationForm-input"
+              id="prezdivka"
+              placeholder="Vyplňte"
+            />
+          </div>
+        </div>
+
+        <!-- Sportovní údaje -->
+        <div class="mb-4">
+          <label class="registrationForm-label">Věnuje se atletice?</label>
+          <div class="registrationForm-radios">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="atletika"
+                id="atletika_ano"
+                value="ano"
+              />
+              <label class="form-check-label" for="atletika_ano">Ano</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="atletika"
+                id="atletika_ne"
+                value="ne"
+                checked
+              />
+              <label class="form-check-label" for="atletika_ne">Ne</label>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="sport" class="registrationForm-label"
+            >Věnuje se sportu (pokud nějakému)</label
+          >
+          <input
+            type="text"
+            class="registrationForm-input"
+            id="sport"
+            placeholder="Vyplňte pokud existuje"
+          />
+        </div>
+
+        <!-- Faktura a další informace -->
+        <div class="mb-4">
+          <label class="registrationForm-label">Přeji si vystavit fakturu na firmu</label>
+          <div class="registrationForm-radios">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="faktura"
+                id="faktura_ano"
+                value="ano"
+              />
+              <label class="form-check-label" for="faktura_ano">Ano</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="faktura"
+                id="faktura_ne"
+                value="ne"
+                checked
+              />
+              <label class="form-check-label" for="faktura_ne">Ne</label>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="zdroj" class="registrationForm-label">Odkud jste se o nás dozvěděli?</label>
+          <select class="form-select" id="zdroj">
+            <option selected>Vyberte</option>
+            <option value="internet">Internet</option>
+            <option value="doporuceni">Doporučení</option>
+            <option value="jine">Jiné</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <input
+            type="text"
+            class="registrationForm-input w-auto text-center"
+            placeholder="Mám slevový kupon"
+          />
+        </div>
+
+        <!-- Souhlasy -->
+        <div class="mb-4 form-check">
+          <input class="form-check-input" type="checkbox" id="souhlas_osobni" />
+          <label class="form-check-label" for="souhlas_osobni"
+            >Souhlas se<a href="#"> zpracováním osobních údajů</a></label
+          >
+        </div>
+        <div class="mb-4 form-check">
+          <input class="form-check-input" type="checkbox" id="souhlas_pravidla" />
+          <label class="form-check-label" for="souhlas_pravidla"
+            >Souhlas s <a href="#">pravidly a podmínkami účasti na kempu</a></label
+          >
+        </div>
+        <div class="mb-4 form-check">
+          <input class="form-check-input" type="checkbox" id="souhlas_stanovami" />
+          <label class="form-check-label" for="souhlas_stanovami"
+            >Souhlas se <a href="#">stanovami - Atletický klub Adama Sebastiana Helceleta, z.s.</a>
+          </label>
+        </div>
+        <button type="submit" class="btn btn--accent w-100 justify-content-center">
+          Odeslat registraci
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

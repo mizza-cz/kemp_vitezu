@@ -1,0 +1,10 @@
+.registrationCamp {
+  &__wrapp {
+    max-width: 572px;
+    margin: 0 auto;
+  }
+  .btn:disabled {
+    background-color: var(--color-text-muted);
+    border: 1px solid var(--color-text-muted);
+  }
+}

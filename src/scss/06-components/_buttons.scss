@@ -5,6 +5,7 @@
   width: fit-content;
   align-items: center;
   font-size: 14px;
+  font-weight: 600;
   line-height: 20px;
   border-radius: 8px;
   border: 1px solid var(--color-border);
@@ -20,7 +21,7 @@
     background-color: var(--color-secondary-disabled);
   }
 }
- 
+
 .btn.btn--accent {
   background: var(--color-text-accent) !important;
   color: var(--color-light);
@@ -34,6 +35,15 @@
     svg path {
       fill: var(--color-text-accent);
     }
+  }
+}
+.btn.btn--dark {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border: 1px solid var(--color-dark);
+  &:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
   }
 }
 /*! purgecss end ignore */

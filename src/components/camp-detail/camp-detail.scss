@@ -1,0 +1,50 @@
+.camp-detail__info {
+  box-shadow: 0px 3px 6px 0px #0a9feb14, 0px 10px 10px 0px #0a9feb12, 0px 23px 14px 0px #0a9feb0a;
+  background-color: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  margin-bottom: 32px;
+  gap: 24px;
+  border-radius: 8px;
+  @include media-breakpoint-down(xl) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &-list {
+    display: flex;
+    gap: 36px;
+    @include media-breakpoint-down(xl) {
+      display: grid;
+      margin-bottom: 8px;
+      width: 100%;
+    }
+    @include media-breakpoint-only(lg) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    @include media-breakpoint-only(md) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    @include media-breakpoint-down(md) {
+      gap: 16px;
+    }
+    li {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: left;
+      span {
+        display: block;
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--color-text-secondary);
+      }
+    }
+  }
+  .btn {
+    min-width: fit-content;
+  }
+}
