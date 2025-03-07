@@ -1,14 +1,22 @@
-{% extends "@components/base/base.twig" %}
-
-{% set title = "01.0_homepage" %}
-
-{% block main %}
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %}
 <div class="base">
-   {% include "@components/header/header.twig" %}
-   <main class="main" aria-label="Hlavní obsah">
-     
-   </main>
-   {% include "@components/footer/footer.twig" %}
- </div>
+  {% include "@components/header/header.twig" %}
+  <main class="main main--home" aria-label="Hlavní obsah">
+    {% include "@components/heroSection/heroSection.twig" %} {% include
+    "@components/gallery/gallery.twig" %} {% include
+    "@components/reviewsSection/reviewsSection.twig" %} {% include
+    "@components/campsBoard/campsBoard.twig" %}
+   
+    {% include
+      "@components/gallery/gallery-2.twig" %}
+    {% include
+      "@components/about-section/about-section.twig" %}
+  </main>
+
+  {% include "@components/posts/posts.twig" %} {% include
+  "@components/partners/partners.twig" %} {% include
+  "@components/footer/footer.twig" %}
+</div>
 
 {% endblock %}

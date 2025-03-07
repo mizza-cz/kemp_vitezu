@@ -1,0 +1,33 @@
+.campsBoard {
+  background-color: #f0f9ff;
+  padding: 100px 0;
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    padding: 40px 0;
+  }
+  &__content {
+    @include media-breakpoint-down(lg) {
+      width: fit-content;
+      margin: 0 auto;
+    }
+    p {
+      max-width: 300px;
+    }
+  }
+  &__form {
+    max-width: 300px;
+    margin-bottom: 32px;
+    .form-select {
+      border: 2px solid #0c9feb;
+    }
+  }
+  .filterCateg {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+  .main__decore {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.filterCateg {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  background-color: var(--color-accent-disabled);
+  width: fit-content;
+  border-radius: 6px;
+
+  a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-text-accent);
+    transition: all 0.3s;
+  }
+  a:not(.active):hover {
+    color: var(--color-text-accent-pressed);
+  }
+  .active {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    box-shadow: 0px 4px 4px 0px #0000001a;
+  }
+}

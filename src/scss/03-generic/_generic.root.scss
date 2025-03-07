@@ -9,16 +9,22 @@
   --color-text-accent: #0078bf;
   --color-text-accent-pressed: #065586;
 
+
+  --color-text-success: #00823e;
+  --color-border-success: #9dcba8;
+  --color-bg-success: #d8eddc;
+
   --color-text-red: #c32518;
   --color-border-red: #f5a79a;
   --color-bg-red: #fddad5;
 
   --color-brand-500: rgba(12, 159, 235, 1);
 
-  --font-primary: 'Open Sans', serif;
+  --font-primary: "Open Sans", serif;
   --color-text-secondary: #626d7c;
   --color-text-muted: #a2abb8;
 
-  --shadow-1: 0px 3px 6px 0px rgba(10, 159, 235, 0.08), 0px 10px 10px 0px rgba(10, 159, 235, 0.07),
+  --shadow-1: 0px 3px 6px 0px rgba(10, 159, 235, 0.08),
+    0px 10px 10px 0px rgba(10, 159, 235, 0.07),
     0px 23px 14px 0px rgba(10, 159, 235, 0.04);
 }

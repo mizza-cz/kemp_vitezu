@@ -1,0 +1,48 @@
+.reviewsSection {
+  padding: 48px 0;
+  @include media-breakpoint-down(lg) {
+    padding: 32p 0;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    transition: all 0.3s;
+    border-radius: 8px;
+    text-decoration: none;
+    &:hover {
+      box-shadow: 0px 3px 6px 0px #0a9feb14, 0px 10px 10px 0px #0a9feb12,
+        0px 23px 14px 0px #0a9feb0a;
+    }
+  }
+  &__ava {
+    height: 100px;
+    max-width: 100px;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__icon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

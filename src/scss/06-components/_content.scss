@@ -2,7 +2,7 @@
   &::after {
     display: table;
     clear: both;
-    content: '';
+    content: "";
   }
   > :first-child {
     margin-top: 0;
@@ -45,7 +45,7 @@
         }
       }
       &::before {
-        content: '';
+        content: "";
         background: var(--color-brand-500);
         position: absolute;
         top: 8px;
@@ -78,7 +78,7 @@
       position: relative;
       padding-left: 24px;
       &::before {
-        content: counter(item) ')';
+        content: counter(item) ")";
         color: var(--color-dark);
         font-weight: 600;
         position: absolute;
@@ -89,7 +89,7 @@
         margin: 16px 0 0;
         > li {
           &::before {
-            content: counter(item) '.';
+            content: counter(item) ".";
           }
         }
       }
@@ -129,6 +129,15 @@
   @include media-breakpoint-down(lg) {
     font-size: 40px;
     line-height: 1.5;
+  }
+}
+.o-content h2,
+.h2 {
+  font-size: 32px;
+  line-height: 40px;
+  @include media-breakpoint-down(lg) {
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 
@@ -178,4 +187,17 @@
 .p4 {
   font-size: 12px;
   line-height: 16px;
+}
+.title-lg {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  @include media-breakpoint-down(lg) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+#vimeo {
+  display: none;
 }

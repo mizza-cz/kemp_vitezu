@@ -9,7 +9,7 @@
     position: relative;
     padding-bottom: 80px;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: -1000%;
       z-index: 1;
@@ -81,7 +81,7 @@
     font-size: 0;
     gap: 8px;
     @include media-breakpoint-down(md) {
-      display: none;
+      display: none !important;
     }
     .slick-active button {
       width: 8px;
