@@ -10,7 +10,7 @@ if (countdownWrapper) {
 
     if (timeDiff <= 0) {
       countdownWrapper.innerHTML =
-        '<b class="py-3 text-uppercase" style="grid-column: span 4">Utkání již bylo zahájeno</b>';
+        '<b class="py-3 text-uppercase" style="grid-column: span 4">Kemp již proběhl</b>';
       clearInterval(timerInterval);
     } else {
       let days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
