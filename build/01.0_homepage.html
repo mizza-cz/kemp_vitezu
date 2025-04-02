@@ -8,10 +8,15 @@
 	<meta name="format-detection" content="telephone=no" />
 
 	<!--****** Favicon ******-->
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+	<link rel="shortcut icon" href="favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+	<link rel="manifest" href="favicon/site.webmanifest" />
 	<!--****** Fonts ******-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
 
 	<!--****** Styles  ******-->
 	<link rel="preload" href="css/styles.css" as="style" />
@@ -24,7 +29,6 @@
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
 	<!-- ****** scripts ****** -->
-
 </head>
 
 <body>
@@ -43,7 +47,21 @@
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" href="#"> Info </a>
+								<div class="nav-link">Info</div>
+								<ul class="dropdown-menu">
+									<li class="dropdown-menu__list">
+										<a href="#">Vedení klubu</a>
+									</li>
+									<li class="dropdown-menu__list">
+										<a href="#">Kontakty </a>
+									</li>
+									<li class="dropdown-menu__list">
+										<a href="#"> Media a press</a>
+									</li>
+									<li class="dropdown-menu__list">
+										<a href="#">Historie </a>
+									</li>
+								</ul>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link active" href="#"> Patroni </a>
@@ -249,15 +267,21 @@
 									<strong>jsou navrženy tak, aby vyhovovaly všem dětem</strong> bez
 									ohledu na jejich sportovní zkušenosti nebo fyzickou kondici.
 								</p>
-								<ul class="filterCateg">
+								<ul class="filterCateg nav nav-tabs" id="nav-tab" role="tablist">
 									<li>
-										<a href="#" class="active">Vše</a>
+										<button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">
+											Vše
+										</button>
 									</li>
 									<li>
-										<a href="#">Kempy</a>
+										<button class="nav-link" id="nav-camps-tab" data-bs-toggle="tab" data-bs-target="#nav-camps" type="button" role="tab" aria-controls="nav-camps" aria-selected="false">
+											Kempy
+										</button>
 									</li>
 									<li>
-										<a href="#">Kroužky</a>
+										<button class="nav-link" id="nav-society-tab" data-bs-toggle="tab" data-bs-target="#nav-society" type="button" role="tab" aria-controls="nav-society" aria-selected="false">
+											Kroužky
+										</button>
 									</li>
 								</ul>
 								<form class="campsBoard__form">
@@ -280,100 +304,207 @@
 							</div>
 						</div>
 						<div class="col-xl-9 col-lg-8">
-							<div class="row g-4">
-								<div class="col-xl-4 col-md-6">
-									<div class="campItem">
-										<ul class="tags">
-											<li>
-												<div class="tag tag-green mb-2">Zbývá 12 míst</div>
-											</li>
-											<li>
-												<div class="tag mb-2">Kroužek</div>
-											</li>
-										</ul>
-										<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
-										<div class="p3 mb-1">14.07 - 18.02 2025</div>
-										<div class="p3 text-secondary">Praha</div>
-										<div class="d-flex flex-wrap gap-2 mt-4">
-											<a href="#" class="btn"><span>Info</span></a>
-											<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+							<div class="tab-content" id="nav-tabContent">
+								<div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+									<div class="row g-4">
+										<div class="col-xl-4 col-md-6">
+											<div class="campItem">
+												<ul class="tags">
+													<li>
+														<div class="tag tag-green mb-2">Zbývá 12 míst</div>
+													</li>
+													<li>
+														<div class="tag mb-2">Kroužek</div>
+													</li>
+												</ul>
+												<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
+												<div class="p3 mb-1">14.07 - 18.02 2025</div>
+												<div class="p3 text-secondary">Praha</div>
+												<div class="d-flex flex-wrap gap-2 mt-4">
+													<a href="#" class="btn"><span>Info</span></a>
+													<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+												</div>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="col-xl-4 col-md-6">
-									<div class="campItem">
-										<ul class="tags">
-											<li>
-												<div class="tag tag-green mb-2">Zbývá 12 míst</div>
-											</li>
-											<li>
-												<div class="tag mb-2">Kemp</div>
-											</li>
-										</ul>
-										<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
-										<div class="p3 mb-1">14.07 - 18.02 2025</div>
-										<div class="p3 text-secondary">Praha</div>
-										<div class="d-flex flex-wrap gap-2 mt-4">
-											<a href="#" class="btn"><span>Info</span></a>
-											<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+										<div class="col-xl-4 col-md-6">
+											<div class="campItem">
+												<ul class="tags">
+													<li>
+														<div class="tag tag-green mb-2">Zbývá 12 míst</div>
+													</li>
+													<li>
+														<div class="tag mb-2">Kemp</div>
+													</li>
+												</ul>
+												<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
+												<div class="p3 mb-1">14.07 - 18.02 2025</div>
+												<div class="p3 text-secondary">Praha</div>
+												<div class="d-flex flex-wrap gap-2 mt-4">
+													<a href="#" class="btn"><span>Info</span></a>
+													<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+												</div>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="col-xl-4 col-md-6">
-									<div class="campItem">
-										<ul class="tags">
-											<li>
-												<div class="tag tag-red mb-2">Zbývá 5 míst</div>
-											</li>
-											<li>
-												<div class="tag mb-2">Kemp</div>
-											</li>
-										</ul>
-										<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
-										<div class="p3 mb-1">14.07 - 18.02 2025</div>
-										<div class="p3 text-secondary">Praha</div>
-										<div class="d-flex flex-wrap gap-2 mt-4">
-											<a href="#" class="btn"><span>Info</span></a>
-											<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+										<div class="col-xl-4 col-md-6">
+											<div class="campItem">
+												<ul class="tags">
+													<li>
+														<div class="tag tag-red mb-2">Zbývá 5 míst</div>
+													</li>
+													<li>
+														<div class="tag mb-2">Kemp</div>
+													</li>
+												</ul>
+												<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
+												<div class="p3 mb-1">14.07 - 18.02 2025</div>
+												<div class="p3 text-secondary">Praha</div>
+												<div class="d-flex flex-wrap gap-2 mt-4">
+													<a href="#" class="btn"><span>Info</span></a>
+													<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+												</div>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="col-xl-4 col-md-6">
-									<div class="campItem">
-										<ul class="tags">
-											<li>
-												<div class="tag tag-green mb-2">Zbývá 12 míst</div>
-											</li>
-											<li>
-												<div class="tag mb-2">Kroužek</div>
-											</li>
-										</ul>
-										<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
-										<div class="p3 mb-1">14.07 - 18.02 2025</div>
-										<div class="p3 text-secondary">Praha</div>
-										<div class="d-flex flex-wrap gap-2 mt-4">
-											<a href="#" class="btn"><span>Info</span></a>
-											<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+										<div class="col-xl-4 col-md-6">
+											<div class="campItem">
+												<ul class="tags">
+													<li>
+														<div class="tag tag-green mb-2">Zbývá 12 míst</div>
+													</li>
+													<li>
+														<div class="tag mb-2">Kroužek</div>
+													</li>
+												</ul>
+												<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
+												<div class="p3 mb-1">14.07 - 18.02 2025</div>
+												<div class="p3 text-secondary">Praha</div>
+												<div class="d-flex flex-wrap gap-2 mt-4">
+													<a href="#" class="btn"><span>Info</span></a>
+													<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+												</div>
+											</div>
 										</div>
-									</div>
-								</div>
 
-								<div class="col-xl-4 col-md-6">
-									<div class="campItem">
-										<ul class="tags">
-											<li>
-												<div class="tag tag-red mb-2">Zbývá 5 míst</div>
-											</li>
-											<li>
-												<div class="tag mb-2">Kemp</div>
-											</li>
-										</ul>
-										<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
-										<div class="p3 mb-1">14.07 - 18.02 2025</div>
-										<div class="p3 text-secondary">Praha</div>
-										<div class="d-flex flex-wrap gap-2 mt-4">
-											<a href="#" class="btn"><span>Info</span></a>
-											<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+										<div class="col-xl-4 col-md-6">
+											<div class="campItem">
+												<ul class="tags">
+													<li>
+														<div class="tag tag-red mb-2">Zbývá 5 míst</div>
+													</li>
+													<li>
+														<div class="tag mb-2">Kemp</div>
+													</li>
+												</ul>
+												<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
+												<div class="p3 mb-1">14.07 - 18.02 2025</div>
+												<div class="p3 text-secondary">Praha</div>
+												<div class="d-flex flex-wrap gap-2 mt-4">
+													<a href="#" class="btn"><span>Info</span></a>
+													<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="nav-camps" role="tabpanel" aria-labelledby="nav-camps-tab">
+									<div class="row g-4">
+										<div class="col-xl-4 col-md-6">
+											<div class="campItem">
+												<ul class="tags">
+													<li>
+														<div class="tag tag-green mb-2">Zbývá 12 míst</div>
+													</li>
+													<li>
+														<div class="tag mb-2">Kroužek</div>
+													</li>
+												</ul>
+												<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
+												<div class="p3 mb-1">14.07 - 18.02 2025</div>
+												<div class="p3 text-secondary">Praha</div>
+												<div class="d-flex flex-wrap gap-2 mt-4">
+													<a href="#" class="btn"><span>Info</span></a>
+													<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-md-6">
+											<div class="campItem">
+												<ul class="tags">
+													<li>
+														<div class="tag tag-green mb-2">Zbývá 12 míst</div>
+													</li>
+													<li>
+														<div class="tag mb-2">Kemp</div>
+													</li>
+												</ul>
+												<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
+												<div class="p3 mb-1">14.07 - 18.02 2025</div>
+												<div class="p3 text-secondary">Praha</div>
+												<div class="d-flex flex-wrap gap-2 mt-4">
+													<a href="#" class="btn"><span>Info</span></a>
+													<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-md-6">
+											<div class="campItem">
+												<ul class="tags">
+													<li>
+														<div class="tag tag-red mb-2">Zbývá 5 míst</div>
+													</li>
+													<li>
+														<div class="tag mb-2">Kemp</div>
+													</li>
+												</ul>
+												<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
+												<div class="p3 mb-1">14.07 - 18.02 2025</div>
+												<div class="p3 text-secondary">Praha</div>
+												<div class="d-flex flex-wrap gap-2 mt-4">
+													<a href="#" class="btn"><span>Info</span></a>
+													<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="nav-society" role="tabpanel" aria-labelledby="nav-society-tab">
+									<div class="row g-4">
+										<div class="col-xl-4 col-md-6">
+											<div class="campItem">
+												<ul class="tags">
+													<li>
+														<div class="tag tag-green mb-2">Zbývá 12 míst</div>
+													</li>
+													<li>
+														<div class="tag mb-2">Kroužek</div>
+													</li>
+												</ul>
+												<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
+												<div class="p3 mb-1">14.07 - 18.02 2025</div>
+												<div class="p3 text-secondary">Praha</div>
+												<div class="d-flex flex-wrap gap-2 mt-4">
+													<a href="#" class="btn"><span>Info</span></a>
+													<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-md-6">
+											<div class="campItem">
+												<ul class="tags">
+													<li>
+														<div class="tag tag-green mb-2">Zbývá 12 míst</div>
+													</li>
+													<li>
+														<div class="tag mb-2">Kemp</div>
+													</li>
+												</ul>
+												<div class="h5 mb-1">Náměšť nad Oslavou 2025</div>
+												<div class="p3 mb-1">14.07 - 18.02 2025</div>
+												<div class="p3 text-secondary">Praha</div>
+												<div class="d-flex flex-wrap gap-2 mt-4">
+													<a href="#" class="btn"><span>Info</span></a>
+													<a href="#" class="btn btn--reg"><span>Registrace</span></a>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
