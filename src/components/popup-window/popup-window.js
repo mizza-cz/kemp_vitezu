@@ -1,7 +1,7 @@
-jQuery(document).ready(function ($) {
-  window.onload = function () {
+jQuery(function ($) {
+  window.addEventListener("load", function () {
     $(".bts-popup").delay(1000).addClass("is-visible");
-  };
+  });
 
   $(".bts-popup-trigger").on("click", function (event) {
     event.preventDefault();
